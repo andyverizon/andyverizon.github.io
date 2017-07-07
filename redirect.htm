@@ -4,6 +4,7 @@
 <script type="text/javascript">
   $(function() {
 
+    // get phone detail
     var variable = "r";
     var query = window.location.search.substring(1);
     var vars = query.split("&");
@@ -15,7 +16,10 @@
       }
     }
 
+    // append to phone url
     val = "tel:" + val;
+
+    // redirect
     window.location = val;
   });
 </script>
